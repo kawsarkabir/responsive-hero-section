@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* =========== header section =========== */
+.header-section{
+    background-image: url(./image/banner.png);
+   background-repeat: no-repeat;
+   height: 100vh;
+   background-position: bottom;
+   background-size: cover; 
+}
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+.header-content img{
+    height: 100vh;
+    width: 100%;
+}
+.header-content .header-text{
+    color: #fff;
+}
+.btn{
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background: #fff;
+    color: rgb(47, 15, 77);
+}
+
+/* ==== header section responsive start here ==== */
+@media only screen and (max-width: 600px){
+    .header-content{
+        grid-template-columns: 1fr ;
+        
+    }
+    .header-content img{
+        height: 60vh;
+    }
+    .header-content .header-text{
+        text-align: center;
+    }
+    .header-text h1{
+        font-size: 25px;
+        margin-bottom: 0.5rem;
+    }
+    .btn{
+        padding: 0.4rem 0.9rem;
+    }
+    
+}
+/* ===== header section end ======= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== header section end ============ */
