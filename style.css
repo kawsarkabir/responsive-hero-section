@@ -5,15 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 .container{
-    width: 1080px;
+    width: 1200px;
     margin: auto;
 }
 /* =========== header section =========== */
 .header-section{
-    background-image: url(./image/banner.png);
+   background-image: url(./image/banner.png);
    background-repeat: no-repeat;
    height: 500px;
-   background-position: bottom;
+   background-position: center;
    background-size: cover; 
 }
 .header-content{
@@ -21,7 +21,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-  
+    height: 500px;  
     
 }
 .header-content img{
@@ -45,14 +45,16 @@
 
 /* ==== header section responsive start here ==== */
 @media only screen and (max-width: 480px){
+    .header-section{
+        height: 100vh;
+    }
     .container{
         width: 90%;
+        
     }
     .header-content{
         grid-template-columns: 1fr ;
-    }
-    .header-content img{
-        height: 60vh;
+        height: 100vh;
     }
     .header-content .header-text{
         text-align: center;
